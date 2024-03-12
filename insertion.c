@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "vetores.h"
+#include "geraVetor.h"
 
 #define TAMANHO_VETOR 100
 
@@ -33,6 +33,6 @@ int main(){
 
 
     printArray(numeros,TAMANHO_VETOR);
-    //insertion(numeros);
+    insertion(numeros);
     //printArray(numeros,TAMANHO_VETOR);
 }
