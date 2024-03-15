@@ -6,13 +6,11 @@
 void insertion(int Vet[]){
     int i,j,aux;
     int trocas = 0, comparacoes = 0;
-    for (i = 1; i < TAMANHO_VETOR; i++)
-    {
+    for (i = 1; i < TAMANHO_VETOR; i++) {
         j = i - 1;
         aux = Vet[i];
         if (Vet[j] < aux) comparacoes++; //Nao faz parte do algoritmo, apenas para contagem de comparacoes
-        while (j >= 0 && Vet[j] > aux)
-        {
+        while (j >= 0 && Vet[j] > aux)  {
             Vet[j+1] = Vet[j];
             trocas++;
             comparacoes++;
@@ -34,5 +32,6 @@ int main(){
 
     printArray(numeros,TAMANHO_VETOR);
     insertion(numeros);
+    checaOrdenacao(numeros,TAMANHO_VETOR);
     //printArray(numeros,TAMANHO_VETOR);
 }
