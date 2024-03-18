@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "geraVetor.h"
 
-#define TAMANHO_VETOR 10
+#define TAMANHO_VETOR 100
 
 void merge(int Vet[], int comeco, int meio, int fim, int *comparacoes, int *trocas) {
     int i,j,k;
@@ -56,7 +56,7 @@ int main(){
     //merge(numeros,0,2,5);
     int comparacoes, trocas = 0;
     merge_sort(numeros,0,TAMANHO_VETOR-1,&comparacoes,&trocas);
-    printArray(numeros,TAMANHO_VETOR);
+    //printArray(numeros,TAMANHO_VETOR);
     checaOrdenacao(numeros,TAMANHO_VETOR);
     printf("Numero de trocas:%d\nNumero de comparacoes:%d\n",trocas,comparacoes);
 }
