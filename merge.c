@@ -42,21 +42,21 @@ void merge_sort(int Vet[], int comeco, int fim, int *comparacoes, int *trocas){
 }
 
 int main(){
-    int numeros[TAMANHO_VETOR];
-    //int numeros[] = {2,2,2,2};
+    int vetor[TAMANHO_VETOR];
+    //int vetor[] = {2,2,2,2};
 
 
-    //adicionaNumerosAleatorios(numeros,TAMANHO_VETOR);
-    insereCrescente(numeros,TAMANHO_VETOR); //Melhor caso
-    //insereDecrescente(numeros,TAMANHO_VETOR); //Pior caso
-    //adicionaNumerosSemiOrdenados(numeros,TAMANHO_VETOR,95);
+    adicionaNumerosAleatorios(vetor,TAMANHO_VETOR);
+    //insereCrescente(vetor,TAMANHO_VETOR);
+    //insereDecrescente(vetor,TAMANHO_VETOR);
+    //adicionaNumerosSemiOrdenados(vetor,TAMANHO_VETOR,95);
 
 
-    printArray(numeros,TAMANHO_VETOR);
-    //merge(numeros,0,2,5);
+    printArray(vetor,TAMANHO_VETOR);
+    //merge(vetor,0,2,5);
     int comparacoes, trocas = 0;
-    merge_sort(numeros,0,TAMANHO_VETOR-1,&comparacoes,&trocas);
-    //printArray(numeros,TAMANHO_VETOR);
-    checaOrdenacao(numeros,TAMANHO_VETOR);
+    merge_sort(vetor,0,TAMANHO_VETOR-1,&comparacoes,&trocas);
+    //printArray(vetor,TAMANHO_VETOR);
+    checaOrdenacao(vetor,TAMANHO_VETOR);
     printf("Numero de trocas:%d\nNumero de comparacoes:%d\n",trocas,comparacoes);
 }

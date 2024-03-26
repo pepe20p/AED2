@@ -22,16 +22,16 @@ void insertion(int Vet[]){
 }
 
 int main(){
-    int numeros[TAMANHO_VETOR];
+    int vetor[TAMANHO_VETOR];
     
-    //adicionaNumerosAleatorios(numeros,TAMANHO_VETOR);
-    //insereCrescente(numeros,TAMANHO_VETOR); //Melhor caso
-    //insereDecrescente(numeros,TAMANHO_VETOR); //Pior caso
-    adicionaNumerosSemiOrdenados(numeros,TAMANHO_VETOR,95);
+    //adicionaNumerosAleatorios(vetor,TAMANHO_VETOR);
+    //insereCrescente(vetor,TAMANHO_VETOR); //Melhor caso
+    //insereDecrescente(vetor,TAMANHO_VETOR); //Pior caso
+    adicionaNumerosSemiOrdenados(vetor,TAMANHO_VETOR,95);
 
 
-    printArray(numeros,TAMANHO_VETOR);
-    insertion(numeros);
-    checaOrdenacao(numeros,TAMANHO_VETOR);
-    //printArray(numeros,TAMANHO_VETOR);
+    printArray(vetor,TAMANHO_VETOR);
+    insertion(vetor);
+    checaOrdenacao(vetor,TAMANHO_VETOR);
+    //printArray(vetor,TAMANHO_VETOR);
 }

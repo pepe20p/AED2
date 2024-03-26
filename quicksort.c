@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "geraVetor.h"
 
-#define TAMANHO_VETOR 100
+#define TAMANHO_VETOR 100000
 
 int partition(int Vet[],int inicio,int fim, int *comparacoes, int *trocas){
     int pivo = Vet[fim];
@@ -33,21 +33,21 @@ void quicksort(int Vet[], int inicio, int fim, int *comparacoes, int *trocas) {
 }
 
 int main() {
-    int numeros[TAMANHO_VETOR];
-    //int numeros[] = {2,8,7,1,3,5,6,4};
+    int vetor[TAMANHO_VETOR];
+    //int vetor[] = {2,8,7,1,3,5,6,4};
 
 
-    //adicionaNumerosAleatorios(numeros,TAMANHO_VETOR);
-    //insereCrescente(numeros,TAMANHO_VETOR); //Melhor caso
-    //insereDecrescente(numeros,TAMANHO_VETOR); //Pior caso
-    adicionaNumerosSemiOrdenados(numeros,TAMANHO_VETOR,95);
+    adicionaNumerosAleatorios(vetor,TAMANHO_VETOR);
+    //insereCrescente(vetor,TAMANHO_VETOR);
+    //insereDecrescente(vetor,TAMANHO_VETOR);
+    //adicionaNumerosSemiOrdenados(vetor,TAMANHO_VETOR,95);
 
 
-    printArray(numeros,TAMANHO_VETOR);
+    printArray(vetor,TAMANHO_VETOR);
     int comparacoes, trocas = 0;
-    //partition(numeros,0,TAMANHO_VETOR-1);
-    quicksort(numeros,0,TAMANHO_VETOR-1,&comparacoes,&trocas);
-    //printArray(numeros,TAMANHO_VETOR);
-    checaOrdenacao(numeros,TAMANHO_VETOR);
+    //partition(vetor,0,TAMANHO_VETOR-1);
+    quicksort(vetor,0,TAMANHO_VETOR-1,&comparacoes,&trocas);
+    //printArray(vetor,TAMANHO_VETOR);
+    checaOrdenacao(vetor,TAMANHO_VETOR);
     printf("Numero de trocas:%d\nNumero de comparacoes:%d\n",trocas,comparacoes);
 }
