@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "geraVetor.h"
 
-#define TAMANHO_VETOR 1000000
+#define TAMANHO_VETOR 100000
 
 typedef struct {
     int vet[TAMANHO_VETOR];
